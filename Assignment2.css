@@ -1,16 +1,22 @@
 /*Assignment2 */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-#tandoori-pizza{
+.pizza-img{
     align-items: center;
     width: 30%;
 }
+
 #index-bg{
     width: 100%;
     opacity: 0.5;
     position:absolute;
     z-index: -1;
 }
+/*
+Plus button
+*/
+
+
 *{
   margin: 0;
   padding: 0;
