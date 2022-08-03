@@ -291,3 +291,31 @@ footer {
     font-size: 0.8em;
     width: 40%;
   }
+
+  .pizza-menu,.sandwich-menu,.beverage-menu{
+    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: baseline;
+    
+   
+  }
+  /*change to 1000
+*/
+  @media (max-width: 800px){
+    .pizza-menu,.sandwich-menu,.beverage-menu{
+      flex-direction: column;
+    }
+  }
+
+  .pizza-img{
+    width: 88mm;
+    height: 50mm;
+    
+
+  }
+  .bev{
+    width:auto;
+    height: 50mm;
+  }
