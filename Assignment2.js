@@ -10,7 +10,7 @@ signupBtn.onclick = (()=>{
 loginBtn.onclick = (()=>{
   loginForm.style.marginLeft = "0%";
   loginText.style.marginLeft = "0%";
-});
+}); 
 signupLink.onclick = (()=>{
   signupBtn.click();
   return false;
