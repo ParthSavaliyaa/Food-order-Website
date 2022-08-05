@@ -16,55 +16,44 @@
 <div class="wrapper">
     <div class="title-text">
       <div class="title login">Login Form</div>
-      <div class="title signup">Signup Form</div>
+      
     </div>
     <div class="form-container">
       <div class="slide-controls">
         <input type="radio" name="slide" id="login" checked>
         <input type="radio" name="slide" id="signup">
         <label for="login" class="slide login">Login</label>
-        <label for="signup" class="slide signup">Signup</label>
+  
         <div class="slider-tab"></div>
       </div>
       <div class="form-inner">
         
         
-        <form action="#" class="login">
+        <form name="login" action="#" class="login" method="get" onsubmit="return validate();">
           <div class="field">
-            <input type="text" placeholder="Email Address" >
-            <p id="emails" class="fields"></p>
+            <input type="text" placeholder="Email Address" id="emails" name="emails">
+            <p id="ealert" class="fields"></p>
           </div>
           <div class="field">
-            <input type="password" placeholder="Password" >
+            <input type="password" id="password" name="password" placeholder="Password" >
+            <p id="palert" class="fields"></p>
           </div>
   
           <div class="field btn">
             <div class="btn-layer"></div>
             <input type="submit" value="Login">
           </div>
-          <div class="signup-link">Not a member? <a href="">Signup now</a></div>
-        </form>
+          <div class="signup-link">Not a member? <a href="signup.html">Signup now</a></div>
+        
 
 
 
-        <form action="#" class="signup">
-          <div class="field">
-            <input type="text" placeholder="Email Address" >
-          </div>
-          <div class="field">
-            <input type="password" placeholder="Password" >
-          </div>
-          <div class="field">
-            <input type="password" placeholder="Confirm password"  >
-          </div>
-          <div class="field btn">
-            <div class="btn-layer"></div>
-            <input type="submit" value="Signup">
-          </div>
-        </form>
+
       </div>
     </div>
   </div>
+  <script src="validate.js"></script>
+
 
 </body>
 </html>
