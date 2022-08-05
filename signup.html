@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <a href="Assignment2.css"></a>
-    
+    <script src="signup.js"></script>
+
 </head>
 <body>
     
 
 
 
-<form name="signup" action="#" class="signup">
+<form name="signup" action="#" class="signup" name="signup" method="get" onsubmit="return validate()">
     <div class="field">
-      <input type="text" placeholder="Email Address" >
+      <input type="text" placeholder="Email Address" class="emails" id="emails" >
+      <p class="fields" id="ealert"></p>
     </div>
     <div class="field">
-      <input type="password" placeholder="Password" >
+      <input type="password" placeholder="Password" class="password" id="password">
+      <p id="p1alert" class="fields"></p>
     </div>
     <div class="field">
-      <input type="password" placeholder="Confirm password"  >
+      <input type="password" placeholder="Confirm password" class="retype" id="retype">
+      <p class="fields" id="p2alert"></p>
     </div>
     <div class="field btn">
       <div class="btn-layer"></div>
