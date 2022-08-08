@@ -13,8 +13,12 @@ $db = db_connect();
   $sql = "INSERT INTO demo.customers (email, password) VALUES ('$email','$password')";
 $result = mysqli_query($db, $sql);
     // For INSERT statements, $result is true/false
+
+    
     
   
   
   }
-?>
+
+    
+<script src="signup.js"></script>
