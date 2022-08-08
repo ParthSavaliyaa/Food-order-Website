@@ -11,8 +11,8 @@
 </head>
 <body id="signBody">
     
-
-
+  
+  
 <div class="wrapper">
   <div class="title-text">
     <div class="title login">Signup Form</div>
@@ -22,17 +22,17 @@
   
   <div class="form-inner">
   
-      <form name="signup" action="#" class="signup" name="signup" method="get" onsubmit="return validate()">
+      <form name="signup" action="create.php" class="signup" name="signup" method="post" onsubmit="return validate()">
           <div class="field">
-            <input type="text" placeholder="Email Address" class="emails" id="emails" >
+            <input type="text" placeholder="Email Address" class="emails" id="emails" name="email">
             <p class="fields" id="ealert"></p>
           </div>
           <div class="field">
-            <input type="password" placeholder="Password" class="password" id="password">
+            <input type="password" placeholder="Password" class="password" id="password" name="password">
             <p id="p1alert" class="fields"></p>
           </div>
           <div class="field">
-            <input type="password" placeholder="Confirm password" class="retype" id="retype">
+            <input type="password" placeholder="Confirm password" class="retype" id="retype" name="retype">
             <p class="fields" id="p2alert"></p>
           </div>
           <div class="field btn">
