@@ -298,8 +298,8 @@ footer {
   padding: 20px;
   background: -webkit-linear-gradient(left,
    #0073e6);
-color:aliceblue ;
-font-weight: bold; 
+  color: aliceblue;
+  font-weight: bold; 
 
  }
  .nav-links a {
@@ -460,5 +460,4 @@ input[type=checkbox]{
 
 
  /*search and filter*/
- 
  
