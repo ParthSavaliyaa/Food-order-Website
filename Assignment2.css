@@ -256,7 +256,7 @@ footer {
     
    
   }
-  
+
   @media (max-width: 1000px){
     .pizza-menu,.sandwich-menu,.beverage-menu{
       flex-direction: column;
@@ -307,6 +307,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+
+  background-color: teal;
+  color: #fff;
+
   background: -webkit-linear-gradient(left,
    #0073e6);
   color: aliceblue;
@@ -366,7 +370,7 @@ footer {
  /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
 input[type=checkbox]{
-  display: none;
+visibility: hidden;
  } 
  /*HAMBURGER MENU*/
  .hamburger {
@@ -377,6 +381,7 @@ input[type=checkbox]{
  /* APPLYING MEDIA QUERIES */
  @media (max-width: 768px) {
  .menu { 
+
   display:none;
   position: absolute;
   background-color:teal;
@@ -394,7 +399,8 @@ input[type=checkbox]{
   margin-top: 12px;
  }
  input[type=checkbox]:checked ~ .menu{
-  display: block;
+  display:block;
+  padding-top: 20%;
  }
  .hamburger {
   display: block;
@@ -471,5 +477,4 @@ input[type=checkbox]{
   
 }
 
- /*search and filter*/
- 
+
