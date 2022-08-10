@@ -15,7 +15,7 @@ $result = mysqli_query($db, $sql);
     // For INSERT statements, $result is true/false
 
     
-    
+    header("location: index.html");
   
   
   }
