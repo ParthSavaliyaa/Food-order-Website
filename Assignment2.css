@@ -246,7 +246,7 @@ footer {
   }
   /*change to 1000
 */
-  @media (max-width: 800px){
+  @media (max-width: 1000px){
     .pizza-menu,.sandwich-menu,.beverage-menu{
       flex-direction: column;
     }
@@ -296,11 +296,8 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background: -webkit-linear-gradient(left,
-   #0073e6);
-color:aliceblue ;
-font-weight: bold; 
-
+  background-color: teal;
+  color: #fff;
  }
  .nav-links a {
   color: #fff;
@@ -353,7 +350,7 @@ font-weight: bold;
  /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
 input[type=checkbox]{
-  display: none;
+visibility: hidden;
  } 
  /*HAMBURGER MENU*/
  .hamburger {
@@ -364,6 +361,7 @@ input[type=checkbox]{
  /* APPLYING MEDIA QUERIES */
  @media (max-width: 768px) {
  .menu { 
+
   display:none;
   position: absolute;
   background-color:teal;
@@ -381,7 +379,8 @@ input[type=checkbox]{
   margin-top: 12px;
  }
  input[type=checkbox]:checked ~ .menu{
-  display: block;
+  display:block;
+  padding-top: 20%;
  }
  .hamburger {
   display: block;
@@ -457,8 +456,3 @@ input[type=checkbox]{
   border-radius: 5px;
   
 }
-
-
- /*search and filter*/
- 
- 
