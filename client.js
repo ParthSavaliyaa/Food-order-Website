@@ -144,8 +144,8 @@ function categoryAndItems(i){
 	//	categoryData += `<strong><h4><a title="Click here to jump to ${ele}" href="#${ele}">&#x2728;${ele}</a></h4></strong>`;
 		itemCategory += `<strong><p id ="${ele}">&#x2728;${ele}</p></strong><br>`;
 		for(ele2 in restaurants[i].menu[ele]){
-			itemCategory += `<strong>${restaurants[i].menu[ele][ele2].name} ($${restaurants[i].menu[ele][ele2].price}</strong>)\
-			 <img src="/img/add.png" alt="${restaurants[i].menu[ele][ele2].name}" style="width:20px;height:20px;" onclick="recordAdd(this)"\
+			itemCategory += `<strong>${restaurants[i].menu[ele][ele2].name} ($${restaurants[i].menu[ele][ele2].price}</strong>) 
+			 <img src="add.png" alt="${restaurants[i].menu[ele][ele2].name}" style="width:20px;height:20px;" onclick="recordAdd(this)" 
 			  title="Click here to add ${restaurants[i].menu[ele][ele2].name} to the order"><br>${restaurants[i].menu[ele][ele2].description}<br><br>`;
             
 			
@@ -236,7 +236,7 @@ function recordMinus(getRid){
 function printRecords(){
 	let recordStr = "";
 	for(key in itemsOrdered){
-		recordStr += `${key} x ${itemsOrdered[key][0]}($${itemsOrdered[key][1]}) <img src="/img/remove.png" alt="${key}" style="width:17px;height:17px;" onclick="recordMinus(this)"><br>`;}
+		recordStr += `${key} x ${itemsOrdered[key][0]}($${itemsOrdered[key][1]}) <img src="remove.png" alt="${key}" style="width:17px;height:17px;" onclick="recordMinus(this)"><br>`;}
 	if(toAdd > 0){recordStr += `Subtotal: $${subTotal.toFixed(2)}<br>Tax: $${tax.toFixed(2)}<br>Delivery charge: $${deliveryFee.toFixed(2)}<br>Total: $${total.toFixed(2)}<br>Add $${toAdd.toFixed(2)} \
 	more to your order<br>`;}
 	else{recordStr += `Subtotal: $${subTotal.toFixed(2)}<br>Tax: $${tax.toFixed(2)}<br>Delivery charge: $${deliveryFee.toFixed(2)}<br>Total: $${total.toFixed(2)}<br>`;}
