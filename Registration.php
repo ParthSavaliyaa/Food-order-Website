@@ -24,7 +24,10 @@
       <div class="form-inner">
         
         
-        <form name="login" action="" class="login" method="post" onsubmit="return validate();">
+        <form name="login" action="show.php" class="login" method="post" onsubmit="return validate();">
+        <?php if (isset($_GET['error'])) { ?>
+          <p class="error"><?php echo $_GET['error']; ?></p>
+          <?php } ?>
           <div class="field">
             <input type="text" placeholder="Email Address" id="emails" name="emails">
             <p id="ealert" class="fields"></p>
@@ -40,19 +43,18 @@
           </div>
           <div class="signup-link">Not a member? <a href="signup.html">Signup now</a></div>
         </form>
-        
-        
-} 
-    </div>
+        <?php 
 
 
-  </div>
+  
 
-</div>    
-        
+  
+  
+  
+
+?>
 
 
-      
 
       </div>
     </div>
