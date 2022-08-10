@@ -17,7 +17,7 @@ signupLink.onclick = (()=>{
 });
 
 function menubar(){
-  
+
   document.querySelector("#checkbox_toggle").checked
 
 }
