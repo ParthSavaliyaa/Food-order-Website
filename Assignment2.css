@@ -296,8 +296,15 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+
   background-color: teal;
   color: #fff;
+
+  background: -webkit-linear-gradient(left,
+   #0073e6);
+  color: aliceblue;
+  font-weight: bold; 
+
  }
  .nav-links a {
   color: #fff;
@@ -456,3 +463,4 @@ visibility: hidden;
   border-radius: 5px;
   
 }
+
